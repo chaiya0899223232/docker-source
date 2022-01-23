@@ -30,4 +30,8 @@ In another terminal, run the Node application:
 node server.js
 ```
 
+docker build -t memorystore
+docker run -d -p 80:80 memorystore
+
+
 Visit the following `localhost` URL to test your server that connects to Redis and observe a persistant "Visitor number".
